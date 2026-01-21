@@ -53,52 +53,16 @@ class SessionManager:
     # --------------------------
     # Create session
     # --------------------------
-    from ucap.config import MIN_REQUIRED_TRUST
-from ucap.security.key_manager import KeyManager
-
-
-class SessionManager:
-    def __init__(self, logger):
-        self.logger = logger
-        self.sessions = {}
-        self.kms = KeyManager(logger)
-
     def create_session(
         self,
         chosen_algo: str,
-        metadata: dict,
-        ttl: int = None
-    ):
-        # --------------------------
-        # Identity Validation
-        # --------------------------
-        if "client_id" not in metadata:
-            self.logger.log(
-                "ACCESS_DENIED",
-                "Missing client identity"
-            )
-            raise SessionError("Unauthenticated client")
+        metadata: Optional[Dict] = None,
+        ttl: Optional[int] = None
+    ) -> SessionContext:
 
-        if "trust_level" not in metadata:
-            self.logger.log(
-                "ACCESS_DENIED",
-                f"client={metadata.get('client_id')} missing trust level"
-            )
-            raise SessionError("Trust level not provided")
-
-        if metadata["trust_level"] < MIN_REQUIRED_TRUST:
-            self.logger.log(
-                "ACCESS_DENIED",
-                f"client={metadata.get('client_id')} insufficient trust"
-            )
-            raise SessionError("Insufficient trust level")
-
-        # --------------------------
-        # Session Creation
-        # --------------------------
         sid = random_urlsafe_token(12)
 
-        # Generate key via KMS
+        # ✅ Generate key via KMS
         session_key = self.kms.create_key(sid)
 
         ctx = SessionContext(
@@ -108,7 +72,7 @@ class SessionManager:
             ttl=ttl or SESSION_TTL_SECONDS,
             metadata={
                 "algo": chosen_algo,
-                **metadata
+                **(metadata or {})
             }
         )
 
@@ -116,7 +80,7 @@ class SessionManager:
 
         self.logger.log(
             "SESSION_CREATED",
-            f"session={sid}, client={metadata['client_id']}, trust={metadata['trust_level']}"
+            f"session={sid}, algo={chosen_algo}"
         )
 
         return ctx

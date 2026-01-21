@@ -1,0 +1,5 @@
+--- UCAP LOG FILE FOR downgrade_test ---
+
+{"ts": "2026-01-21T04:25:50Z", "type": "NEGOTIATION_START", "msg": "client={'RSA', 'AES'}, server={'RSA'}", "meta": {}}
+{"ts": "2026-01-21T04:25:50Z", "type": "DOWNGRADE_DETECTED", "msg": "client_pref=AES, chosen=RSA", "meta": {}}
+{"ts": "2026-01-21T04:25:50Z", "type": "NEGOTIATION_SUCCESS", "msg": "chosen=RSA", "meta": {}}

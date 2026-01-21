@@ -1,0 +1,4 @@
+--- UCAP LOG FILE FOR replay_test ---
+
+{"ts": "2026-01-21T04:25:50Z", "type": "SESSION_CREATED", "msg": "session=kDPDRd5PtXAZXb-M, algo=AES", "meta": {}}
+{"ts": "2026-01-21T04:25:50Z", "type": "REPLAY_ATTACK_DETECTED", "msg": "session=kDPDRd5PtXAZXb-M", "meta": {}}
