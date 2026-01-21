@@ -1,0 +1,7 @@
+--- UCAP LOG FILE FOR CASE 2: MISMATCH (RSA → AES TRANSLATION) ---
+
+{"ts": "2025-12-03T07:42:12Z", "type": "NEGOTIATION_START", "msg": "client={'RSA'} server={'AES'}", "meta": {}}
+{"ts": "2025-12-03T07:42:12Z", "type": "NEGOTIATION_TRANSLATE", "msg": "no-common", "meta": {}}
+{"ts": "2025-12-03T07:42:12Z", "type": "SESSION_CREATED", "msg": "session=qYC6Or-y9s0b6K_j algo=TRANSLATE", "meta": {}}
+{"ts": "2025-12-03T07:42:12Z", "type": "TRANSLATE_START", "msg": "RSA -> AES", "meta": {}}
+{"ts": "2025-12-03T07:42:12Z", "type": "TRANSLATE_DONE", "msg": "output_algo=AES ct_len=29", "meta": {}}

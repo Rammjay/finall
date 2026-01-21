@@ -5,13 +5,7 @@ import json
 from typing import Optional, Dict, Any
 
 class UCAPEnvelope:
-    """
-    Standardized crypto message:
-       algo:      "AES", "RSA", "X25519", ...
-       ciphertext: bytes
-       nonce:     optional bytes
-       meta:      dict
-    """
+   
 
     def __init__(self, algo: str, ciphertext: bytes, nonce: Optional[bytes] = None, meta: Optional[Dict[str, Any]] = None):
         self.algo = algo

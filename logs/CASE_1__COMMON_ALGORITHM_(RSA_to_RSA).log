@@ -1,0 +1,5 @@
+--- UCAP LOG FILE FOR CASE 1: COMMON ALGORITHM (RSA ↔ RSA) ---
+
+{"ts": "2025-12-03T07:42:12Z", "type": "NEGOTIATION_START", "msg": "client={'RSA'} server={'RSA'}", "meta": {}}
+{"ts": "2025-12-03T07:42:12Z", "type": "NEGOTIATION_MATCH", "msg": "chosen=RSA", "meta": {}}
+{"ts": "2025-12-03T07:42:12Z", "type": "SESSION_CREATED", "msg": "session=SQHsdWlZtQ2w1YjO algo=RSA", "meta": {}}
