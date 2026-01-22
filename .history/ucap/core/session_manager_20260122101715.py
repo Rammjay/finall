@@ -19,7 +19,7 @@ from .config import SESSION_TTL_SECONDS
 from .utils import random_urlsafe_token
 from .errors import SessionError
 from ucap.security.key_manager import KeyManager
-from .config import MIN_REQUIRED_TRUST
+from ucap.config import MIN_REQUIRED_TRUST
 
 
 # ==============================

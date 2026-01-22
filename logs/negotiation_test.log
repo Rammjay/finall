@@ -1,4 +1,4 @@
 --- UCAP LOG FILE FOR negotiation_test ---
 
-{"ts": "2026-01-21T04:25:50Z", "type": "NEGOTIATION_START", "msg": "client={'RSA', 'AES'}, server={'AES'}", "meta": {}}
-{"ts": "2026-01-21T04:25:50Z", "type": "NEGOTIATION_SUCCESS", "msg": "chosen=AES", "meta": {}}
+{"ts": "2026-01-22T04:49:08Z", "type": "NEGOTIATION_START", "msg": "client={'AES', 'RSA'}, server={'AES'}", "meta": {}}
+{"ts": "2026-01-22T04:49:08Z", "type": "NEGOTIATION_SUCCESS", "msg": "chosen=AES", "meta": {}}

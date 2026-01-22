@@ -1,5 +1,6 @@
 --- UCAP LOG FILE FOR rsa_to_aes ---
 
-{"ts": "2026-01-21T04:25:50Z", "type": "SESSION_CREATED", "msg": "session=iupPl_WNgjULg9GV, algo=AES", "meta": {}}
-{"ts": "2026-01-21T04:25:50Z", "type": "ENCRYPTED_PAYLOAD", "msg": "RSA encryption performed", "meta": {"algo": "RSA", "ciphertext": "Q2X4qqOC/yLE9U81Us4TnKMcZMHa0shHgc82nIU51PxBqorZefkvgPOTwlMXjCnfECzOpI2y9a+pmzN3oavwcERAUIo3FhLfJoMnVA3eS06Vinl1gixFp4w/0HMp2DMO4VAyEaj28h8t5+04CN9bKv8YBv2RSe3bpdPk4qaMDj5GI/Xk4gn2OG/YV+5ruMh4ORa5YZjS9pccI9r1Cy2DD9gN1hCQbWzSxhf9ZohLqJifVCn2tGPZVDmMbS7WnQlbAGV9O/qeaTERaqRtcUTL4WqNyHExgwfk0cagKGSGHX75saWA7UOnLxGuHppvYeil5wT7Yb+2+Z5+zzK0wfXSWQ==", "length": 256}}
-{"ts": "2026-01-21T04:25:50Z", "type": "ENCRYPTED_PAYLOAD", "msg": "AES encryption successful", "meta": {"algo": "AES", "ciphertext": "eD59WAaW/j29r1aw1fDnW43ul8QAj7HHnPjsKVE=", "length": 29}}
+{"ts": "2026-01-22T04:49:08Z", "type": "KMS_KEY_CREATED", "msg": "Key created: RhrcCNhywrTiiZwD", "meta": {"size": 32}}
+{"ts": "2026-01-22T04:49:08Z", "type": "SESSION_CREATED", "msg": "session=RhrcCNhywrTiiZwD, client=client_A, trust=2", "meta": {}}
+{"ts": "2026-01-22T04:49:08Z", "type": "ENCRYPTED_PAYLOAD", "msg": "RSA encryption performed", "meta": {"algo": "RSA", "ciphertext": "Resn6qoohNyFc/NBPv+qe7aJNZ2SITMep3LJatnm0OZqa3EwLFh2ciYzOYLErpN5es6s/mktQzcjl/oWWyBAU7xk9Pox98XEaYyQ9xVIaVd8gD7lYR9vLe4GH0NANzg4HEUEdj+O/yuWUXj8s7BUreAJDk910B6BY4FZkcAAJWzuY4dfF0R8jQyTwbie9xRbBMtFw5KELIViVUrdm3y/h+4gzxc2S8dWEIUf31j1b7e8I7XihcDl+oTRp3tbN55cq1WUMf1XzAR4CsrHR/e18H+Q9nY47H553BRtfmL+TGQRebvH7Kctt6FgyaM7J9jdDxxjYTc5wYw3LI11A7gNTw==", "length": 256}}
+{"ts": "2026-01-22T04:49:08Z", "type": "ENCRYPTED_PAYLOAD", "msg": "AES encryption successful", "meta": {"algo": "AES", "ciphertext": "up7rBqK47eNtiMGVGLQD0z4pinmjnIKLjnQhMp0=", "length": 29}}

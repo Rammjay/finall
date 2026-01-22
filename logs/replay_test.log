@@ -1,4 +1,5 @@
 --- UCAP LOG FILE FOR replay_test ---
 
-{"ts": "2026-01-21T04:25:50Z", "type": "SESSION_CREATED", "msg": "session=kDPDRd5PtXAZXb-M, algo=AES", "meta": {}}
-{"ts": "2026-01-21T04:25:50Z", "type": "REPLAY_ATTACK_DETECTED", "msg": "session=kDPDRd5PtXAZXb-M", "meta": {}}
+{"ts": "2026-01-22T04:49:08Z", "type": "KMS_KEY_CREATED", "msg": "Key created: CqX9ax1Vd7m2_VWe", "meta": {"size": 32}}
+{"ts": "2026-01-22T04:49:08Z", "type": "SESSION_CREATED", "msg": "session=CqX9ax1Vd7m2_VWe, client=client_A, trust=2", "meta": {}}
+{"ts": "2026-01-22T04:49:08Z", "type": "REPLAY_ATTACK_DETECTED", "msg": "session=CqX9ax1Vd7m2_VWe", "meta": {}}

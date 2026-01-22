@@ -1,4 +1,5 @@
 --- UCAP LOG FILE FOR ecc_test ---
 
-{"ts": "2026-01-21T04:25:50Z", "type": "SESSION_CREATED", "msg": "session=QR8uyxP5xHdleQFP, algo=ECC", "meta": {}}
-{"ts": "2026-01-21T04:25:50Z", "type": "ENCRYPTED_PAYLOAD", "msg": "ECC encryption performed", "meta": {"algo": "ECC", "ciphertext": "iQgL5EN571l6Kx4IPJ189TSZoqA6CDERlg==", "length": 25}}
+{"ts": "2026-01-22T04:49:08Z", "type": "KMS_KEY_CREATED", "msg": "Key created: d7VfravaH-2mAuyS", "meta": {"size": 32}}
+{"ts": "2026-01-22T04:49:08Z", "type": "SESSION_CREATED", "msg": "session=d7VfravaH-2mAuyS, client=client_A, trust=2", "meta": {}}
+{"ts": "2026-01-22T04:49:08Z", "type": "ENCRYPTED_PAYLOAD", "msg": "ECC encryption performed", "meta": {"algo": "ECC", "ciphertext": "CnLgfPvQdSmrFm8oKEK6Nso9ozMr+0CrCw==", "length": 25}}

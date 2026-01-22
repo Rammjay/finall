@@ -98,14 +98,7 @@ def test_ecc():
 
     logger = AuditLogger("ecc_test")
     sm = SessionManager(logger)
-    session = sm.create_session(
-    "ECC",
-    metadata={
-        "client_id": "client_A",
-        "trust_level": 2
-    }
-)
-
+    session = sm.create_session("ECC")
     session.metadata["logger"] = logger
 
     ecc = ECCX25519Plugin()
